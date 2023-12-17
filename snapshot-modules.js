@@ -159,10 +159,16 @@ When(`I click slide {int} snapshot`, (int) => {
   cy.get(`.swiper-pagination-bullet[aria-label="Go to slide ${int}"]`).click({ force : true })
 })
 
+<<<<<<< HEAD
 And(`Remove padding-top of element {string}`, (element) => {
   cy.get(`${element}`).invoke(`css`, `padding-top`, `0`)
 })
 
 And(`Click {string}`, (element) => {
   cy.get(`${element}`).click({ force : true })
+=======
+And(`Add css {string} and remove css {string} of element {string}`, (css1, css2, element) => {
+  cy.get(`${element}`).invoke(`addClass`, `${css1}`)
+  cy.get(`${element}`).invoke(`removeClass`, `${css2}`)
+>>>>>>> 08ce854f4f8148e3a5aec0b457cb003397e8b5e2
 })

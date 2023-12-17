@@ -18,6 +18,7 @@ const specData = {
     modNextStep: {
       title1: 'Lorem Ipsum has been the industry standard dummy text ever since the 1500s',
       title2: 'Lorem Ipsum has been the industry standard dummy text ever since the 1500s'
+<<<<<<< HEAD
     }
   },
   
@@ -31,6 +32,13 @@ const specData = {
       title30_2: 'CRUISE CONTROL CRUISE CONTROL',
       title30_3: 'LONG-TRAVEL FRONT SUSPENSION LONG-TRAVEL FRONT SUSPENSION',
       title30_4: 'Apple CarPlay™ AND ANDROID AUTO™  Apple CarPlay™ AND ANDROID AUTO™'
+=======
+    },
+    motoCycle: {
+      subheader: {
+        headline: 'Explore all Honda Motorcycle Explore all Honda Motorcycle'
+      }
+>>>>>>> 08ce854f4f8148e3a5aec0b457cb003397e8b5e2
     },
     modCategory: {
       headline: 'Indulge your wanderlust Indulge your wanderlust',
