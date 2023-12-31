@@ -3,9 +3,11 @@ Feature: MD-38 Category Intro Module
 
     Scenario Outline: Category-Intro-Module--<viewport>-design-0
         Given I open page "/motorcycle/dual-sport" on "<viewport>"
-        When Replace content "__motoCycle.subheader.title38" with element selector is ".wrapper .module .animation h2"
-        And Hidden element with selector is ".module.header"
-        Then Compare module ".wrapper .mod-category-models .animation:has(h2)" with id "<Id>" and position 0
+        Given Disabled all youtube video
+        And Hidden element with selector is "header"
+        When Replace content "__MD38CategoryIntroModule.headline" with element selector is ".mod-category-intro h1"
+        When Replace content "__MD38CategoryIntroModule.description" with element selector is ".mod-category-intro p"
+        Then Compare module ".mod-category-intro" with id "<Id>" and position 0
 
         @Category-Intro-1920x1080-design-0
         Examples:
